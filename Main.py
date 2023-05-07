@@ -14,17 +14,17 @@ def join():
     )
     
     print(message.body)
-    time.sleep(5)
+    /
 
     webbrowser.open_new_tab('https://meet.google.com/pad-ztqi-aaz')
-    time.sleep(5)
+    /
 
     auto.hotkey('ctrl', 'd')
     auto.hotkey('ctrl', 'e')
 
     auto.click(1365, 582)
 
-    time.sleep(15)
+    /
     auto.hotkey('ctrl', 'w')
 
 schedule.every().day.at("20:29").do(join)
